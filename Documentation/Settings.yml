@@ -7,5 +7,5 @@ conf.py:
   copyright: 2017
   project: News Jobs
   version: 2.0
-  release: 2.1.0
+  release: 2.1.1
 ...
