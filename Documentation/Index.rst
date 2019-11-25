@@ -29,7 +29,7 @@ News Jobs
         news, jobs, joblist
 
     :Copyright:
-        2017
+        2019
 
     :Author:
         Peter Benke
