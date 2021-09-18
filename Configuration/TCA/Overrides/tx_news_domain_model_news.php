@@ -55,19 +55,7 @@ $tempColumns = array(
 			'type' => 'text',
 			'cols' => '30',
 			'rows' => '5',
-/*
-			'wizards' => array(
-				'_PADDING' => 2,
-				'RTE' => array(
-					'notNewRecords' => 1,
-					'RTEonly'       => 1,
-					'type'          => 'script',
-					'title'         => 'Full screen Rich Text Editing',
-					'icon'          => 'wizard_rte2.gif',
-					'script'        => 'wizard_rte.php',
-				),
-			),
-*/
+			'enableRichtext' => true,
 		)
 	),
 	'tx_pbnewsjobs_tasks' => array(
@@ -77,19 +65,7 @@ $tempColumns = array(
 			'type' => 'text',
 			'cols' => '30',
 			'rows' => '5',
-/*
-			'wizards' => array(
-				'_PADDING' => 2,
-				'RTE' => array(
-					'notNewRecords' => 1,
-					'RTEonly'       => 1,
-					'type'          => 'script',
-					'title'         => 'Full screen Rich Text Editing',
-					'icon'          => 'wizard_rte2.gif',
-					'script'        => 'wizard_rte.php',
-				),
-			),
-*/
+			'enableRichtext' => true,
 		)
 	),
 	'tx_pbnewsjobs_requirements' => array(
@@ -99,19 +75,7 @@ $tempColumns = array(
 			'type' => 'text',
 			'cols' => '30',
 			'rows' => '5',
-/*
-			'wizards' => array(
-				'_PADDING' => 2,
-				'RTE' => array(
-					'notNewRecords' => 1,
-					'RTEonly'       => 1,
-					'type'          => 'script',
-					'title'         => 'Full screen Rich Text Editing',
-					'icon'          => 'wizard_rte2.gif',
-					'script'        => 'wizard_rte.php',
-				),
-			),
-*/
+			'enableRichtext' => true,
 		)
 	),
 	'tx_pbnewsjobs_contact' => array(
@@ -121,20 +85,7 @@ $tempColumns = array(
 			'type' => 'text',
 			'cols' => '30',
 			'rows' => '5',
-/*
-			'wizards' => array(
-				'_PADDING' => 2,
-				'RTE' => array(
-					'notNewRecords' => 1,
-					'RTEonly'       => 1,
-					'type'          => 'script',
-					'title'         => 'Full screen Rich Text Editing',
-					'icon'          => 'wizard_rte2.gif',
-					'script'        => 'wizard_rte.php',
-				),
-			),
-*/
-
+			'enableRichtext' => true,
 		)
 	),
 );

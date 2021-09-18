@@ -14,7 +14,9 @@ ChangeLog
 ========  ==========================
 Version:  Changes:
 ========  ==========================
-2.1.1     Compatibility to TYPO3 9.5
+10.4.0    Compatibility to TYPO3 10.4.0
+--------  --------------------------
+3.0.0     Compatibility to TYPO3 9.5
 --------  --------------------------
 2.1.1     Move TCA-Override into correct folder / Update documentation
 --------  --------------------------

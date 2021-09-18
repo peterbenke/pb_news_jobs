@@ -19,12 +19,17 @@
   ],
   "require": {
     "php": ">=7.2.0",
-    "typo3/cms-core": "~9.5.0||dev-master",
-    "georgringer/news": ">=7.0.6,<7.3.99"
+    "typo3/cms-core": "~10.4.0||dev-master",
+    "georgringer/news": ">=8.0.0,<8.9.99"
   },
   "autoload": {
     "psr-4": {
       "PeterBenke\\PbNewsJobs\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "pb_news_jobs"
     }
   }
 }
