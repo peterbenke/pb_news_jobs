@@ -17,10 +17,13 @@
       "homepage": "http://www.typomotor.de"
     }
   ],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
   "require": {
     "php": ">=7.2.0",
-    "typo3/cms-core": "~10.4.0||dev-master",
-    "georgringer/news": ">=8.0.0,<8.9.99"
+    "typo3/cms-core": "^11.5 || dev-master",
+    "georgringer/news": ">=10.0.0,<=10.9.99"
   },
   "autoload": {
     "psr-4": {
