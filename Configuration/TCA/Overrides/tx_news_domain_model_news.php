@@ -1,7 +1,10 @@
 <?php
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3')) {
 	die ('Access denied.');
 }
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 $tempColumns = array(
 	'tx_pbnewsjobs_entrydate' => array(
 		'exclude' => 1,
@@ -90,5 +93,5 @@ $tempColumns = array(
 	),
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $tempColumns, true);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news','tx_pbnewsjobs_entrydate;;;;1-1-1, tx_pbnewsjobs_location, tx_pbnewsjobs_area, tx_pbnewsjobs_position, tx_pbnewsjobs_jobnumber, tx_pbnewsjobs_payment;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_tasks;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_requirements;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_contact;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/]');
+ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $tempColumns, true);
+ExtensionManagementUtility::addToAllTCAtypes('tx_news_domain_model_news','tx_pbnewsjobs_entrydate;;;;1-1-1, tx_pbnewsjobs_location, tx_pbnewsjobs_area, tx_pbnewsjobs_position, tx_pbnewsjobs_jobnumber, tx_pbnewsjobs_payment;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_tasks;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_requirements;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/], tx_pbnewsjobs_contact;;;richtext[]:rte_transform[mode=ts_css|imgpath=uploads/tx_pbnewsjobs/rte/]');

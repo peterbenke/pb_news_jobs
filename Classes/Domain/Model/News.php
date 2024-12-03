@@ -1,28 +1,12 @@
 <?php
+
 namespace PeterBenke\PbNewsJobs\Domain\Model;
 
-/***************************************************************
- *  Copyright notice
- *
- *  (c) 2013 Peter Benke <peter.benke@nttdata.com>
- *  All rights reserved
- *
- *  This script is part of the TYPO3 project. The TYPO3 project is
- *  free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  The GNU General Public License can be found at
- *  http://www.gnu.org/copyleft/gpl.html.
- *
- *  This script is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  This copyright notice MUST APPEAR in all copies of the script!
- ***************************************************************/
+/**
+ * News
+ */
+
+use GeorgRinger\News\Domain\Model\News as GeorgRingerNews;
 
 /**
  * News model
@@ -30,178 +14,197 @@ namespace PeterBenke\PbNewsJobs\Domain\Model;
  * @package TYPO3
  * @subpackage tx_news
  */
-class News extends \GeorgRinger\News\Domain\Model\News {
+class News extends GeorgRingerNews
+{
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsEntrydate;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsEntrydate;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsLocation;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsLocation;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsArea;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsArea;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsPosition;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsPosition;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsJobnumber;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsJobnumber;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsPayment;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsPayment;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsTasks;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsTasks;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsRequirements;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsRequirements;
 
-	/**
-	 * @var string
-	 */
-	protected $txPbnewsjobsContact;
+    /**
+     * @var string|null
+     */
+    protected ?string $txPbnewsjobsContact;
 
-	/**
-	 * @param string $txPbnewsjobsEntrydate
-	 */
-	public function setTxPbnewsjobsEntrydate($txPbnewsjobsEntrydate){
-		$this->txPbnewsjobsEntrydate = $txPbnewsjobsEntrydate;
-	}
+    /**
+     * @param string|null $txPbnewsjobsEntrydate
+     */
+    public function setTxPbnewsjobsEntrydate(?string $txPbnewsjobsEntrydate): void
+    {
+        $this->txPbnewsjobsEntrydate = $txPbnewsjobsEntrydate;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsEntrydate(){
-		return $this->txPbnewsjobsEntrydate;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsEntrydate(): ?string
+    {
+        return $this->txPbnewsjobsEntrydate;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsLocation
-	 */
-	public function setTxPbnewsjobsLocation($txPbnewsjobsLocation){
-		$this->txPbnewsjobsLocation = $txPbnewsjobsLocation;
-	}
+    /**
+     * @param string|null $txPbnewsjobsLocation
+     */
+    public function setTxPbnewsjobsLocation(?string $txPbnewsjobsLocation): void
+    {
+        $this->txPbnewsjobsLocation = $txPbnewsjobsLocation;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsLocation(){
-		return $this->txPbnewsjobsLocation;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsLocation(): ?string
+    {
+        return $this->txPbnewsjobsLocation;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsArea
-	 */
-	public function setTxPbnewsjobsArea($txPbnewsjobsArea){
-		$this->txPbnewsjobsArea = $txPbnewsjobsArea;
-	}
+    /**
+     * @param string|null $txPbnewsjobsArea
+     */
+    public function setTxPbnewsjobsArea(?string $txPbnewsjobsArea): void
+    {
+        $this->txPbnewsjobsArea = $txPbnewsjobsArea;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsArea(){
-		return $this->txPbnewsjobsArea;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsArea(): ?string
+    {
+        return $this->txPbnewsjobsArea;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsPosition
-	 */
-	public function setTxPbnewsjobsPosition($txPbnewsjobsPosition){
-		$this->txPbnewsjobsPosition = $txPbnewsjobsPosition;
-	}
+    /**
+     * @param string|null $txPbnewsjobsPosition
+     */
+    public function setTxPbnewsjobsPosition(?string $txPbnewsjobsPosition): void
+    {
+        $this->txPbnewsjobsPosition = $txPbnewsjobsPosition;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsPosition(){
-		return $this->txPbnewsjobsPosition;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsPosition(): ?string
+    {
+        return $this->txPbnewsjobsPosition;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsJobnumber
-	 */
-	public function setTxPbnewsjobsJobnumber($txPbnewsjobsJobnumber){
-		$this->txPbnewsjobsJobnumber = $txPbnewsjobsJobnumber;
-	}
+    /**
+     * @param string|null $txPbnewsjobsJobnumber
+     */
+    public function setTxPbnewsjobsJobnumber(?string $txPbnewsjobsJobnumber): void
+    {
+        $this->txPbnewsjobsJobnumber = $txPbnewsjobsJobnumber;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsJobnumber(){
-		return $this->txPbnewsjobsJobnumber;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsJobnumber(): ?string
+    {
+        return $this->txPbnewsjobsJobnumber;
+    }
 
 
-	/**
-	 * @param string $txPbnewsjobsPayment
-	 */
-	public function setTxPbnewsjobsPayment($txPbnewsjobsPayment){
-		$this->txPbnewsjobsPayment = $txPbnewsjobsPayment;
-	}
+    /**
+     * @param string|null $txPbnewsjobsPayment
+     */
+    public function setTxPbnewsjobsPayment(?string $txPbnewsjobsPayment): void
+    {
+        $this->txPbnewsjobsPayment = $txPbnewsjobsPayment;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsPayment(){
-		return $this->txPbnewsjobsPayment;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsPayment(): ?string
+    {
+        return $this->txPbnewsjobsPayment;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsTasks
-	 */
-	public function setTxPbnewsjobsTasks($txPbnewsjobsTasks){
-		$this->txPbnewsjobsTasks = $txPbnewsjobsTasks;
-	}
+    /**
+     * @param string|null $txPbnewsjobsTasks
+     */
+    public function setTxPbnewsjobsTasks(?string $txPbnewsjobsTasks): void
+    {
+        $this->txPbnewsjobsTasks = $txPbnewsjobsTasks;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsTasks(){
-		return $this->txPbnewsjobsTasks;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsTasks(): ?string
+    {
+        return $this->txPbnewsjobsTasks;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsRequirements
-	 */
-	public function setTxPbnewsjobsRequirements($txPbnewsjobsRequirements){
-		$this->txPbnewsjobsRequirements = $txPbnewsjobsRequirements;
-	}
+    /**
+     * @param string|null $txPbnewsjobsRequirements
+     */
+    public function setTxPbnewsjobsRequirements(?string $txPbnewsjobsRequirements): void
+    {
+        $this->txPbnewsjobsRequirements = $txPbnewsjobsRequirements;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsRequirements(){
-		return $this->txPbnewsjobsRequirements;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsRequirements(): ?string
+    {
+        return $this->txPbnewsjobsRequirements;
+    }
 
-	/**
-	 * @param string $txPbnewsjobsContact
-	 */
-	public function setTxPbnewsjobsContact($txPbnewsjobsContact){
-		$this->txPbnewsjobsContact = $txPbnewsjobsContact;
-	}
+    /**
+     * @param string|null $txPbnewsjobsContact
+     */
+    public function setTxPbnewsjobsContact(?string $txPbnewsjobsContact): void
+    {
+        $this->txPbnewsjobsContact = $txPbnewsjobsContact;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getTxPbnewsjobsContact(){
-		return $this->txPbnewsjobsContact;
-	}
+    /**
+     * @return string|null
+     */
+    public function getTxPbnewsjobsContact(): ?string
+    {
+        return $this->txPbnewsjobsContact;
+    }
 
 }
