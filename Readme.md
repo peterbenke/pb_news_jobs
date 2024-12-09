@@ -61,6 +61,7 @@ None at the moment.
 
 | Version | Changes                                                      |
 |---------|--------------------------------------------------------------|
+| 12.4.2  | Fix nullable model properties                                |
 | 12.4.1  | Update documentation                                         |
 | 12.4.0  | Compatibility to TYPO3 12.4                                  |
 | 10.4.0  | Compatibility to TYPO3 10.4                                  |

@@ -20,47 +20,47 @@ class News extends GeorgRingerNews
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsEntrydate;
+    protected ?string $txPbnewsjobsEntrydate = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsLocation;
+    protected ?string $txPbnewsjobsLocation = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsArea;
+    protected ?string $txPbnewsjobsArea = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsPosition;
+    protected ?string $txPbnewsjobsPosition = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsJobnumber;
+    protected ?string $txPbnewsjobsJobnumber = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsPayment;
+    protected ?string $txPbnewsjobsPayment = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsTasks;
+    protected ?string $txPbnewsjobsTasks = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsRequirements;
+    protected ?string $txPbnewsjobsRequirements = null;
 
     /**
      * @var string|null
      */
-    protected ?string $txPbnewsjobsContact;
+    protected ?string $txPbnewsjobsContact = null;
 
     /**
      * @param string|null $txPbnewsjobsEntrydate
