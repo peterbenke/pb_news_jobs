@@ -56,19 +56,4 @@ Wrap them in your template with the Fluid-format.html-Viewhelper, for example:
 ## KnownProblems
 
 None at the moment.
-
-## Change log
-
-| Version | Changes                                                      |
-|---------|--------------------------------------------------------------|
-| 12.4.2  | Fix nullable model properties                                |
-| 12.4.1  | Update documentation                                         |
-| 12.4.0  | Compatibility to TYPO3 12.4                                  |
-| 10.4.0  | Compatibility to TYPO3 10.4                                  |
-| 3.0.0   | Compatibility to TYPO3 9.5                                   |
-| 2.1.1   | Move TCA-Override into correct folder / Update documentation |
-| 2.1.0   | Compatibility to TYPO3 8.7                                   |
-| 2.0.1   | Bugfix TCA                                                   |
-| 2.0.0   | Compatibility to TYPO3 7.6                                   |     
-| 1.1.0   | Compatibility to TYPO3 6.2                                   |     
-| 1.0.0   | Init Version                                                 |            
+ 
