@@ -27,7 +27,7 @@ Install this extension via composer
 
     composer req peterbenke/pb-news-jobs
 
-Edit your template-record and include static template from extension “News Jobs (pb_news-jobs)”
+Edit your template-record and include static template from extension “News Jobs (pb_news-jobs)” or add a dependency in your site config.
 
 
 ## Configuration
